@@ -1,3 +1,25 @@
+Simple set datatype for JavaScript - a study of unit testing frameworks.
+==========
+
+I used this nifty component to learn about unit testing framework. In the folder unittest-styd are a few projects demonstrating
+the use of different frameworks. There are also som mutations of the simplesets component: an IFFE and an AMD module:
+
+The unit tests
+----------
+The used frameworks are:
+* nodeunit
+* jsTestDriver
+* BusterJS
+ * modules: buster-amd, buster-jstestdriver)
+ * assertions are done with both assertions and specs to demonstrate the differences.
+
+The unit tests are, I hope, self explanatory.
+
+-- Following the original README --
+
+----------
+
+
 Simple set datatype for JavaScript
 ==========
 
