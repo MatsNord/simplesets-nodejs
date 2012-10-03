@@ -1,0 +1,45 @@
+Uses Buster.JS tests case to test a simple calculator
+
+Prereq to run the test:
+Node.js and Buster.JS installed
+
+ - To run the test in browser:
+
+buster-01$ buster static
+Starting server on http://localhost:8282/
+
+Width a browser navigate to the link (you may rightclick and open link)
+Look at the result
+
+- To run the test in Node.js, start the test server:
+~$ buster server
+buster-server running on http://localhost:1111
+
+Width a browser navigate to the link (you may rightclick and open link) and capture your browsers.
+buster-01$ buster test
+Firefox 15.0.1, Linux:                                                                                 
+1 test case, 7 tests, 7 assertions, 0 failures, 0 errors, 0 timeouts
+Finished in 0.076s
+
+With dots reporter:
+buster-01$ buster test --reporter dots
+Firefox 15.0.1, Linux:   
+			.......
+1 test case, 7 tests, 7 assertions, 0 failures, 0 errors, 0 timeouts
+Finished in 0.065s
+
+With tap reporter:
+buster-01$ buster test --reporter tap
+ok 1 Firefox 15.0.1, Linux Calcualtor should add two numbers
+ok 2 Firefox 15.0.1, Linux Calcualtor calculator should exist
+ok 3 Firefox 15.0.1, Linux Calcualtor adds two numbers
+ok 4 Firefox 15.0.1, Linux Calcualtor substracts two numbers
+ok 5 Firefox 15.0.1, Linux Calcualtor multiplies two numbers
+ok 6 Firefox 15.0.1, Linux Calcualtor divides two numbers
+ok 7 Firefox 15.0.1, Linux Calcualtor throw exception for anything else than numbers
+1..7
+
+
+
+
+

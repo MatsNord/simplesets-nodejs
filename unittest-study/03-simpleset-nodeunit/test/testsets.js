@@ -1,5 +1,5 @@
 var assert = require('assert');
-var sets   = require('../lib/node/simplesets');
+var sets   = require('../lib/simplesets');
 
 ////////////////////
 // sets.Set tests 
@@ -165,8 +165,8 @@ assert.ok(s5.equals(new sets.StringSet([4])));
 function stringset_test_each(s) {
     n = new sets.StringSet();
     s.each(function(x) {
-	assert.ok(!n.has(x));
-	n.add(x);
+	   assert.ok(!n.has(x));
+	   n.add(x);
     });
     assert.ok(n.equals(s));
     assert.ok(s.equals(n));
