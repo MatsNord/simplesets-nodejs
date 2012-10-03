@@ -137,7 +137,7 @@ define( ["src/simplesetsmodule"], function ( sets ) {
             var s1 = new sets.Set( [1, 2, 3, "1", "2", "3"] );
             var s2 = new sets.Set( [3, "1", "foo"] );
             assert( s1.symmetric_difference( s2 ).equals( new sets.Set( [1, 2, "2", "3", "foo"] ) ) );
-            assert( s2.esymmetric_difference( s1 ).equals( new sets.Set( [1, 2, "2", "3", "foo"] ) ) );
+            assert( s2.symmetric_difference( s1 ).equals( new sets.Set( [1, 2, "2", "3", "foo"] ) ) );
             refute( s1.intersection( s2 ).equals( new sets.Set( [1, 2, "2", "3", "foo"] ) ) );
         }
         /* Here should tests of stringset follow - the tests above should be refactored to not test on strings */
