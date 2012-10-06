@@ -89,7 +89,7 @@ define( ["src/simplesetsmodule"], function ( sets ) {
                 it( "removes the element", function () {
                     var s1 = this.s1, nullset = this.nullset;
                     var e = s1.pop();
-                    expect( s1.has( e ) ).not.toMatch( /[1-3]/ );
+                    expect( s1.has( e )).toBeFalsy();
                     expect( s1.size() ).toEqual( 2 );
                 } );
             } );
